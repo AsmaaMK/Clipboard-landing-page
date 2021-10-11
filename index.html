@@ -54,11 +54,24 @@
             Mac and iOS apps will help you organize everything.
           </p>
           <div class="grid-container">
-            <img
-              class="computer-img"
-              src="images/image-computer.png"
-              alt="computer"
-            />
+            <picture>
+              <source
+                class="computer-img"
+                type="image/png"
+                srcset="images/image-computer.png"
+              />
+              <source type="image/webp" srcset="images/image-computer.webp" />
+              <source
+                class="computer-img"
+                type="image/png"
+                srcset="images/image-computer.png"
+              />
+              <img
+                class="computer-img"
+                src="images/image-computer.png"
+                alt="computer"
+              />
+            </picture>
             <div class="grid-item">
               <h3>Quick Search</h3>
               <p>
@@ -82,11 +95,23 @@
             Whether you’re on the go, or at your computer, you can access all
             your Clipboard snippets in a few simple clicks.
           </p>
-          <img
-            class="devices-img"
-            src="images/image-devices.png"
-            alt="devices"
-          />
+          <picture>
+            <source
+              class="devices-img"
+              type="image/webp"
+              srcset="images/image-devices.webp"
+            />
+            <source
+              class="devices-img"
+              type="image/png"
+              srcset="images/image-devices.png"
+            />
+            <img
+              class="devices-img"
+              src="images/image-devices.png"
+              alt="devices"
+            />
+          </picture>
         </section>
 
         <section>
@@ -94,7 +119,7 @@
           <p>We’ve got the tools to boost your productivity.</p>
           <div class="flex-container">
             <div>
-              <img src="images/icon-blacklist.svg" alt="" />
+              <img class="icon" src="images/icon-blacklist.svg" alt="" />
               <h3>Create blacklists</h3>
               <p>
                 Ensure sensitive information never makes its way to your
@@ -102,7 +127,7 @@
               </p>
             </div>
             <div>
-              <img src="images/icon-text.svg" alt="" />
+              <img class="icon" src="images/icon-text.svg" alt="" />
               <h3>Plain text snippets</h3>
               <p>
                 Remove unwanted formatting from copied text for a consistent
@@ -110,14 +135,14 @@
               </p>
             </div>
             <div>
-              <img src="images/icon-preview.svg" alt="" />
+              <img class="icon" src="images/icon-preview.svg" alt="" />
               <h3>Sneak preview</h3>
               <p>
                 Quick preview of all snippets on your Clipboard for easy access.
               </p>
             </div>
           </div>
-          <div class="flex-container">
+          <div class="flex-container logos">
             <img src="images/logo-google.png" alt="" />
             <img src="images/logo-ibm.png" alt="" />
             <img src="images/logo-microsoft.png" alt="" />
@@ -153,9 +178,13 @@
         </ul>
 
         <div class="social-links">
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
       </div>
     </footer>
